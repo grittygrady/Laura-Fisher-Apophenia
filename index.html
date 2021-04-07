@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laura Fisher</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/6014e7f866.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- TODO: ANIMATEJS SMOOTH SCROLL -->
+    <!-- NAVBAR / SCROLL -->
+    <nav id="navbar">
+      <div class="navbar__links">
+        <a href="#about">ABOUT</a><a href="#music">MUSIC</a
+        ><a href="#press">PRESS</a><a href="#contact">CONTACT</a>
+      </div>
+    </nav>
+    <!-- HERO -->
+
+    <main>
+      <div class="hero">
+        <div class="hero__text">
+          <h1>LAURA FISHER</h1>
+          <p>IN LOVE WITH THE ETHEREAL</p>
+        </div>
+      </div>
+      <!-- ABOUT SECTION -->
+      <section class="about" id="about">
+        <div class="split">
+          <div class="about__img">
+            <img src="./img/laura-bw.JPG" alt="Laura Fisher" />
+          </div>
+          <div class="about__text">
+            <p>
+              Classical pianist and former choir girl-turned-songwriter,
+              producer, arranger, Fisher describes herself as “in love with the
+              ethereal and holding on.”
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- BANDCAMP EMBED -->
+      <section class="music" id="music">
+        <!-- TODO:MAKE TITLE INTO LINK -->
+        <h2>APOPHENIA</h2>
+        <img src="./img/apophenia-art.png" alt="Apophenia Artwork" />
+        <div class="bandcamp__player">
+          <iframe
+            class="responsive-iframe"
+            style="border: 0; width: 100%; height: 120px"
+            src="https://bandcamp.com/EmbeddedPlayer/album=3420433676/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=none/transparent=true/"
+            seamless
+            ><a href="https://laurakfisher.bandcamp.com/album/apophenia"
+              >APOPHENIA by Laura Fisher</a
+            ></iframe
+          >
+        </div>
+      </section>
+      <!-- TODO: MAKE ARTICLE "CARDS"/ FLEXBOXES -->
+      <section class="press">
+        <h2>PRESS</h2>
+        <div class="split">
+          <div class="press__link1">
+            <img src="./img/laura-vinyl.PNG" alt="Laura Fisher" />
+            <a
+              href="https://neworleans.riverbeats.life/laura-fisher-apophenia/"
+              target="_blank"
+              >River Beats New Orleans</a
+            >
+            <p>
+              Text for album qoute Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Alias, sequi.
+            </p>
+          </div>
+          <div class="press__link2">
+            <img src="./img/laura-beams.JPG" alt="Laura Fisher" />
+            <a
+              href="https://www.mylittleundergroundmusic.com/post/laura-fisher-apophenia"
+              target="_blank"
+              >My Little Underground</a
+            >
+            <p>
+              Text for album qoute Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Alias, sequi.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- CONTACT LINKS -->
+      <section class="contact">
+        <h2>HARMONIZE</h2>
+        <div class="contact__links">
+          <a href="mailto:exactinverse@gmail.com" target="_blank"
+            ><i class="fas fa-at"></i>EMAIL</a
+          >
+          <a href="https://m.facebook.com/laurafishermusic/" target="_blank"
+            ><i class="fab fa-facebook"></i>FACEBOOK</a
+          >
+          <a href="https://laurakfisher.bandcamp.com/" target="_blank"
+            ><i class="fab fa-bandcamp"></i>BANDCAMP</a
+          >
+        </div>
+      </section>
+    </main>
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById('navbar').style.top = '0';
+        } else {
+          document.getElementById('navbar').style.top = '-50px';
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
+  </body>
+</html>
