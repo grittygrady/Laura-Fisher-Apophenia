@@ -1,4 +1,19 @@
-/* UTILITY */
+/* TYPOGRAPHY */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Voltaire&display=swap');
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Voltaire', sans-serif; */
+/*  */
+
+/* COLORS */
+:root {
+  --clr-primary: #dffdff;
+  --clr-medium: #416165;
+  --clr-dark: #0b3948;
+  --clr-accent: #647e90;
+}
+
+/* UTILITY - GLOBAL*/
 *,
 *::before,
 *::after {
@@ -13,6 +28,31 @@ p {
   margin: 0;
 }
 
+h1,
+h2 {
+  font-family: 'Voltaire', sans-serif;
+  color: var(--clr-primary);
+}
+
+p,
+a {
+  font-family: 'Roboto', sans-serif;
+  color: var(--clr-primary);
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--clr-accent);
+}
+
+a:visited {
+  color: var(--clr-primary);
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -21,11 +61,10 @@ img {
 
 body {
   background-color: #000;
-  color: #fff;
 }
 
 main {
-  max-width: 76rem;
+  max-width: 79rem;
   padding: 2rem;
   margin: auto;
 }
@@ -40,6 +79,8 @@ nav {
   background: black;
   padding: 0.75em 0;
   z-index: 10;
+  border-bottom: 0.2em solid var(--clr-dark);
+  border-radius: 0 0 0.5em 0.5em;
 }
 
 .navbar__links {
@@ -56,28 +97,43 @@ nav a {
 
 /* HERO */
 .hero {
-  border: 1px solid red;
   height: 70vh;
-  background-image: url(./img/laura-fence.JPG);
+  background-image: url(./img/laura-fence.JPG),
+    radial-gradient(
+      circle,
+      rgba(2, 0, 36, 0.5) 0%,
+      rgba(11, 57, 72, 0.5) 45%,
+      rgba(0, 212, 255, 0.5) 100%
+    );
+  background-blend-mode: overlay;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative;
+  margin-bottom: 1em;
+  border-radius: 0.2em;
 }
 
 .hero__text {
   position: sticky;
   overflow: hidden;
-  border: 1px solid blue;
+  /* TODO: REMOVE BORDERS */
+  /* border: 1px solid blue; */
   top: 40%;
   text-align: center;
 }
 
-.hero__text h2 {
+.hero__text h1 {
+  font-family: 'Voltaire', sans-serif;
+  font-size: 3em;
+  margin-bottom: 0.3em;
 }
 
 .hero__text p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3em;
+  font-weight: 500;
 }
 
 /* ABOUT SECTION */
