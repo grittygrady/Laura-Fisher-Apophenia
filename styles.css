@@ -9,7 +9,7 @@ font-family: 'Voltaire', sans-serif; */
 :root {
   --clr-primary: #dffdff;
   --clr-medium: #416165;
-  --clr-dark: #0b3948;
+  --clr-dark: #061c23;
   --clr-accent: #647e90;
 }
 
@@ -29,9 +29,16 @@ p {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: 'Voltaire', sans-serif;
   color: var(--clr-primary);
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-weight: 300;
 }
 
 p,
@@ -43,10 +50,6 @@ a {
 a {
   text-decoration: none;
   cursor: pointer;
-}
-
-a:hover {
-  color: var(--clr-accent);
 }
 
 a:visited {
@@ -92,7 +95,10 @@ nav {
 
 nav a {
   display: block;
-  color: #f2f2f2;
+}
+
+a:hover {
+  color: var(--clr-accent);
 }
 
 /* HERO */
@@ -118,8 +124,6 @@ nav a {
 .hero__text {
   position: sticky;
   overflow: hidden;
-  /* TODO: REMOVE BORDERS */
-  /* border: 1px solid blue; */
   top: 40%;
   text-align: center;
 }
@@ -137,17 +141,78 @@ nav a {
 }
 
 /* ABOUT SECTION */
+.about {
+  text-align: center;
+}
 
+.about__img img {
+  border-radius: 0.2em;
+  margin-bottom: 1em;
+  box-shadow: 0 0 0.3em var(--clr-accent);
+}
 /* BANDCAMP SECTION */
+.music {
+  text-align: center;
+  margin: 1em 0;
+}
+
+.music h2 {
+  padding-bottom: 1em;
+  font-size: 2.5em;
+}
+
+.music iframe {
+  border-radius: 0.2em;
+  box-shadow: 0 0 0.3em var(--clr-accent);
+}
+
+/* PRESS SECTION */
+.press {
+}
+
+.press h2 {
+  padding: 0.2em 0 0.5em 0;
+  font-size: 2.5em;
+}
+
+.press__card {
+  background-color: var(--clr-dark);
+  border-radius: 0.3em;
+  padding: 0.75em;
+  margin-bottom: 1em;
+  box-shadow: 0 0 0.3em var(--clr-accent);
+}
+
+.press__card h3 {
+  padding: 0.4em 0;
+  font-size: 1.3em;
+  text-decoration: var(--clr-accent) underline;
+  line-height: 1.6;
+}
+
+.press__card h3:hover {
+  color: var(--clr-accent);
+}
+
+.press__card p {
+  font-size: 0.9em;
+}
 
 /* CONTACT SECTION */
 .contact {
   text-align: center;
 }
-
+.contact h2 {
+  font-size: 2.5em;
+}
 .contact__links {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1em 0 1em 0;
+}
+
+.contact__links a {
+  padding-bottom: 0.5em;
+  letter-spacing: 0.2em;
 }
