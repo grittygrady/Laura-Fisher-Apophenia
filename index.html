@@ -34,7 +34,6 @@
             <img src="./img/laura-bw.JPG" alt="Laura Fisher" />
           </div>
           <div class="about__text">
-            <!-- TODO: MAKE LINKS / EXTERNAL ICONS -->
             <p>
               Laura Fisher is a New Orleans-based composer, vocalist, pianist,
               arranger, and producer. Her genres of influence and interest
@@ -43,7 +42,7 @@
               all over: from DIY venues in Savannah, GA and Huntsville, AL to
               caves off the coast of Portland, ME; from a forest in southern NJ
               to a famous ski destination in Niseko, Japan; from the Birmingham
-              Museum of Art to Merkin Hall at Lincoln Center.
+              Museum of Art to Lincoln Center in New York City.
             </p>
             <p>
               Her current projects include a series of solo releases ranging
@@ -73,53 +72,63 @@
       </section>
       <!-- BANDCAMP EMBED -->
       <section class="music" id="music">
-        <!-- TODO:MAKE TITLE INTO LINK -->
         <h2>APOPHENIA</h2>
-        <img src="./img/apophenia-art.png" alt="Apophenia Artwork" />
-        <div class="bandcamp__player">
-          <iframe
-            class="responsive-iframe"
-            style="border: 0; width: 100%; height: 120px"
-            src="https://bandcamp.com/EmbeddedPlayer/album=3420433676/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=none/transparent=true/"
-            seamless
-            ><a href="https://laurakfisher.bandcamp.com/album/apophenia"
-              >APOPHENIA by Laura Fisher</a
-            ></iframe
-          >
+        <div class="split_2">
+          <img src="./img/apophenia-art.png" alt="Apophenia Artwork" />
+          <div class="bandcamp__player">
+            <iframe
+              class="responsive-iframe"
+              style="border: 0; width: 100%; height: 120px"
+              src="https://bandcamp.com/EmbeddedPlayer/album=3420433676/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=none/transparent=true/"
+              seamless
+              ><a href="https://laurakfisher.bandcamp.com/album/apophenia"
+                >APOPHENIA by Laura Fisher</a
+              ></iframe
+            >
+          </div>
         </div>
       </section>
       <!-- TODO: MAKE ARTICLE "CARDS"/ FLEXBOXES -->
       <section class="press" id="press">
         <h2>PRESS</h2>
-        <div class="split">
+        <div class="press-split">
           <div class="press__card press__link1">
-            <img src="./img/laura-vinyl.PNG" alt="Laura Fisher" />
-            <a
-              href="https://neworleans.riverbeats.life/laura-fisher-apophenia/"
-              target="_blank"
-              ><h3>RIVER BEATS NEW ORLEANS</h3></a
-            >
-            <p>
-              <em>
-                "For fans of Yiruma and softly gazing out rainy windows,
-                APOPHENIA is a delicate, emotive and heartfelt piece of art..."
-              </em>
-            </p>
+            <div class="press__img">
+              <img src="./img/laura-vinyl.PNG" alt="Laura Fisher" />
+            </div>
+            <div class="press__card__text">
+              <a
+                href="https://neworleans.riverbeats.life/laura-fisher-apophenia/"
+                target="_blank"
+                ><h3>RIVER BEATS NEW ORLEANS</h3></a
+              >
+              <p>
+                <em>
+                  "For fans of Yiruma and softly gazing out rainy windows,
+                  APOPHENIA is a delicate, emotive and heartfelt piece of
+                  art..."
+                </em>
+              </p>
+            </div>
           </div>
           <div class="press__card press__link2">
-            <img src="./img/laura-beams.JPG" alt="Laura Fisher" />
-            <a
-              href="https://www.mylittleundergroundmusic.com/post/laura-fisher-apophenia"
-              target="_blank"
-              ><h3>MY LITTLE UNDERGROUND</h3></a
-            >
-            <p>
-              <em>
-                "APOPHENIA isn't a track-by-track album, it's an Album. A full,
-                complete Album. Such things are rare and so immediately it
-                possesses value..."
-              </em>
-            </p>
+            <div class="press__img">
+              <img src="./img/laura-beams.JPG" alt="Laura Fisher" />
+            </div>
+            <div class="press__card__text">
+              <a
+                href="https://www.mylittleundergroundmusic.com/post/laura-fisher-apophenia"
+                target="_blank"
+                ><h3>MY LITTLE UNDERGROUND</h3></a
+              >
+              <p>
+                <em>
+                  "APOPHENIA isn't a track-by-track album, it's an Album. A
+                  full, complete Album. Such things are rare and so immediately
+                  it possesses value..."
+                </em>
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -151,7 +160,7 @@
         if (prevScrollpos > currentScrollPos) {
           document.getElementById('navbar').style.top = '0';
         } else {
-          document.getElementById('navbar').style.top = '-50px';
+          document.getElementById('navbar').style.top = '-5rem';
         }
         prevScrollpos = currentScrollPos;
       };
