@@ -41,11 +41,6 @@ h3 {
   text-align: center;
 }
 
-p {
-  text-align: center;
-  font-weight: 300;
-}
-
 p,
 a {
   font-family: 'Roboto', sans-serif;
@@ -133,16 +128,10 @@ a:hover {
   text-align: center;
 }
 
-.hero__text h1 {
+.hero__text {
   font-family: 'Voltaire', sans-serif;
-  font-size: 3em;
+  font-size: 1.4rem;
   margin-bottom: 0.3em;
-}
-
-.hero__text p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.3em;
-  font-weight: 500;
 }
 
 /* ABOUT SECTION */
@@ -155,6 +144,20 @@ a:hover {
   margin-bottom: 1em;
   box-shadow: 0 0 0.3em var(--clr-accent);
 }
+
+.about__text {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.about__text p:nth-child(1) {
+  margin-bottom: 0.75rem;
+}
+
+.about i {
+  font-size: 0.6rem;
+  vertical-align: text-top;
+}
 /* BANDCAMP SECTION */
 .music {
   text-align: center;
@@ -162,22 +165,27 @@ a:hover {
 }
 
 .music h2 {
-  padding-bottom: 1em;
-  font-size: 2.5em;
+  padding-bottom: 0.5em;
+  font-size: 2.5rem;
 }
 
 .music iframe {
-  border-radius: 0.2em;
+  border-radius: 0 0 0.2em 0.2em;
+}
+
+.music img {
   box-shadow: 0 0 0.3em var(--clr-accent);
+  border-radius: 0.2em 0.2em 0 0;
 }
 
 /* PRESS SECTION */
 .press {
+  text-align: center;
 }
 
 .press h2 {
-  padding: 0.2em 0 0.5em 0;
-  font-size: 2.5em;
+  padding-bottom: 0.5em;
+  font-size: 2.5rem;
 }
 
 .press__card {
@@ -190,9 +198,9 @@ a:hover {
 
 .press__card h3 {
   padding: 0.4em 0;
-  font-size: 1.3em;
+  font-size: 1.45rem;
   text-decoration: var(--clr-accent) underline;
-  line-height: 1.6;
+  letter-spacing: 0.00725rem;
 }
 
 .press__card h3:hover {
@@ -200,7 +208,13 @@ a:hover {
 }
 
 .press__card p {
-  font-size: 0.9em;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.press__card i {
+  vertical-align: text-top;
+  font-size: 0.6rem;
 }
 
 .press__card img {
@@ -234,19 +248,32 @@ footer {
 }
 
 footer p {
-  font-size: 0.9em;
+  font-size: 0.7rem;
+  text-align: center;
   padding: 0.8em 0;
 }
 
 /* MEDIA QUERIES */
-@media (min-width: 700px) {
+@media (min-width: 40em) {
+  html {
+    font-size: 24px;
+  }
+
+  body {
+    background-color: red;
+  }
+
   nav {
     border-bottom: 0.7em solid var(--clr-dark);
   }
 
   .navbar__links a {
     font-family: 'Voltaire', sans-serif;
-    font-size: 4em;
+    font-size: 2.1rem;
     letter-spacing: 0.1em;
+  }
+
+  .hero__text {
+    font-size: 2rem;
   }
 }
