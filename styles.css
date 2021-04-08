@@ -154,6 +154,9 @@ a:hover {
   margin-bottom: 0.75rem;
 }
 
+.about a {
+  text-decoration: var(--clr-accent) underline;
+}
 .about i {
   font-size: 0.6rem;
   vertical-align: text-top;
@@ -253,15 +256,18 @@ footer p {
   padding: 0.8em 0;
 }
 
+.gradymail {
+  text-decoration: var(--clr-accent) underline;
+}
 /* MEDIA QUERIES */
 @media (min-width: 40em) {
   html {
     font-size: 24px;
   }
 
-  body {
+  /* body {
     background-color: red;
-  }
+  } */
 
   nav {
     border-bottom: 0.7em solid var(--clr-dark);
@@ -275,5 +281,34 @@ footer p {
 
   .hero__text {
     font-size: 2rem;
+  }
+
+  .about__text {
+    font-size: 1.2rem;
+  }
+
+  .music h2,
+  .press h2 {
+    font-size: 4rem;
+  }
+
+  .press h3 {
+    font-size: 2rem;
+  }
+
+  .press p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+  .contact {
+    font-size: 1.5rem;
+    padding-bottom: 1em;
+  }
+
+  footer p {
+    font-size: 1rem;
+    font-family: 'Voltaire', sans-serif;
+    letter-spacing: 0.075rem;
   }
 }
