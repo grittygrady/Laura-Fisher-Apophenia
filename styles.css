@@ -128,7 +128,7 @@ a:hover {
 }
 
 .hero__text {
-  position: sticky;
+  position: absolute;
   overflow: hidden;
   top: 40%;
   text-align: center;
