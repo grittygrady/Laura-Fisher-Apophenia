@@ -108,8 +108,7 @@ a:hover {
 
 /* HERO */
 .hero {
-  /* height: 70vh; */
-  min-height: 500px;
+  height: 70vh;
   max-width: 79rem;
   background-image: url(./img/laura-fence.JPG),
     radial-gradient(
